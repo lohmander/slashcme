@@ -1,0 +1,67 @@
+$fixed-width-break: $page-width + (300px * 2);
+
+.page-header {
+    max-width: $page-width;
+    margin: 0 auto;
+    padding: 1rem;
+    overflow: auto;
+
+    border-bottom: 2px solid $code-block-background;
+
+    &__heading {
+        color: #0085FF;
+        text-transform: uppercase;
+        font-size: 2em;
+        font-weight: 700;
+        letter-spacing: -2px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin: 0;
+        padding-top: 0.5em;
+        font-family: $font-family-heading;
+        font-size: 0.9em;
+    }
+
+    a {
+        color: #777;
+        text-decoration: none;
+
+        &:hover {
+            color: #333;
+        }
+    }
+
+    @media (min-width: $page-width) and (max-width: $fixed-width-break)  {
+        &__heading {
+            float: left;
+            font-size: 3em;
+        }
+
+        ul {
+            float: right;
+            text-align: right;
+        }
+    }
+
+    @media (min-width: $fixed-width-break) {
+        position: fixed;
+        width: 250px;
+        top: 0.25rem;
+        left: 50%;
+        margin-left: ($page-width / 2 + 300) * -1;
+
+        text-align: right;
+        border: none;
+
+        &__heading {
+            font-size: 3em;
+        }
+    }
+}

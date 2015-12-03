@@ -1,0 +1,21 @@
+{
+  "name": "slashcme",
+  "version": "1.0.0",
+  "description": "Ghost theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch"
+  },
+  "keywords": [
+    "ghost",
+    "lohmander"
+  ],
+  "author": "Hannes Lohmander",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}

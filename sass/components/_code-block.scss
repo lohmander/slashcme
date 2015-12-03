@@ -1,0 +1,11 @@
+pre {
+    background: $code-block-background;
+
+    font-size: 0.8em;
+
+    code {
+        max-width: $page-width;
+        margin: 0 auto;
+    }
+}
+

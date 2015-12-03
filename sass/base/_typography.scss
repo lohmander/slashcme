@@ -1,0 +1,19 @@
+html, body {
+    font-size: $font-size-base;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    font-family: $font-family-base;
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $font-family-heading;
+}
+
+h2 {
+    font-weight: normal;
+}
